@@ -24,3 +24,17 @@ if (diasDoAno > diasLetivosObrigatorios) {
 } else if (diasLetivosObrigatorios > diasDoAno) {
   console.log ('A quantidade de dias letivos é maior do que a quantidade de dias do ano na Trybe')
 };
+
+// Exercicio 3
+
+let diasDoAno = 365
+let diasLetivosObrigatorios = 317
+let faltasPermitidas = 370
+
+if (diasDoAno > diasLetivosObrigatorios && diasDoAno > faltasPermitidas) { 
+  console.log ('Os dias do ano estão em maior quantidade.')  
+} else if (diasLetivosObrigatorios > diasDoAno && diasLetivosObrigatorios > faltasPermitidas) {
+  console.log ('Os dias letivos obrigatórios estão em maior quantidade.')
+} else if (faltasPermitidas > diasDoAno && faltasPermitidas > diasLetivosObrigatorios) {
+  console.log ('As faltas permitidas estão em maior quantidade e aí virou bagunça!')
+}
