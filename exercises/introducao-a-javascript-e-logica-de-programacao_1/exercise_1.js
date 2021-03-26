@@ -38,3 +38,17 @@ if (diasDoAno > diasLetivosObrigatorios && diasDoAno > faltasPermitidas) {
 } else if (faltasPermitidas > diasDoAno && faltasPermitidas > diasLetivosObrigatorios) {
   console.log ('As faltas permitidas estão em maior quantidade e aí virou bagunça!')
 }
+
+//Exercicio 4
+
+let notaDoProjeto = 20;
+let notaParaAprovacaoDoProjeto = 80;
+let notaParaAprovacaoDaRecuperacao = 90;
+
+if (notaDoProjeto >= 80) {
+  console.log ('Positive. Seu projeto foi aprovado!')
+} else if (notaDoProjeto < 80) {
+  console.log ('Negative. Seu projeto foi reprovado.')  
+} else (console.log ('Zero'))
+
+
