@@ -98,3 +98,47 @@ for (index = 0; index < 25; index +=1) {
   meiaArray [index] = (array[index])/2
 } console.log (meiaArray);
 
+//Bonus 1
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for (index = 1; index < numbers.length; index +=1) {
+  for (secondIndex = 0; secondIndex < index; secondIndex +=1) {
+    if (numbers [index] < numbers [secondIndex]) {
+      let position = numbers [index];
+      numbers [index] = numbers [secondIndex];
+      numbers [secondIndex] = position
+    }
+  }
+  } console.log (numbers);
+
+//Bonus 2
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for (index = 1; index < numbers.length; index +=1) {
+  for (secondIndex = 0; secondIndex < index; secondIndex +=1) {
+    if (numbers [index] > numbers [secondIndex]) {
+      let position = numbers [index];
+      numbers [index] = numbers [secondIndex];
+      numbers [secondIndex] = position
+    }
+  }
+  } console.log (numbers);
+
+  //Bonus 3
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let multipliedNumbers = []
+
+for (index = 0; index < numbers.length; index +=1) {
+  if (multipliedNumbers.length < numbers.length -1) {
+      multipliedNumbers.push (numbers [index] * numbers [index +1]);
+    } else {
+      multipliedNumbers.push ((numbers[index]) * 2)
+    }
+  }
+    console.log (multipliedNumbers);
+
+// resposta: [45, 27, 57, 1330, 560, 800, 200, 70, 945, 54]
+
