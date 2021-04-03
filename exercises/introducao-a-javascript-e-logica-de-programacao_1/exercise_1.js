@@ -51,4 +51,16 @@ if (notaDoProjeto >= 80) {
   console.log ('Negative. Seu projeto foi reprovado.')  
 } else (console.log ('Zero'))
 
+// Exercicio 5
+
+  let anguloA = 90;
+  let anguloB = 60;
+  let anguloC = 30;
+
+  if ((anguloA + anguloB + anguloC) = 180) {
+    console.log ('True')  
+  } else {
+    console.log ('false')
+  }
+
 
